@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "title": "Learn Next.js",
+    "description": "Practice routing and components",
+    "status": "pending",
+    "priority": "high"
+  },
+  {
+    "id": 2,
+    "title": "Build Todo App",
+    "description": "Create CRUD functionality",
+    "status": "in-progress",
+    "priority": "medium"
+  },
+  {
+    "id": 3,
+    "title": "Read JavaScript Book",
+    "description": "Finish ES6 chapter",
+    "status": "completed",
+    "priority": "low"
+  },
+  {
+    "id": 4,
+    "title": "Workout",
+    "description": "30 minutes cardio",
+    "status": "pending",
+    "priority": "medium"
+  },
+  {
+    "id": 5,
+    "title": "Team Meeting",
+    "description": "Discuss project updates",
+    "status": "completed",
+    "priority": "high"
+  }
+]
