@@ -1,9 +1,12 @@
+
+ "use server";
 import { revalidatePath } from "next/cache";
 import { postTask } from "./tasks";
+import { redirect } from "next/dist/server/api-utils";
 
 
 export const createATask = async (formData) =>{
- "use server"
+
 
 //  const title=formData.get('title');
 //  const description = formData .get ("description");
@@ -21,10 +24,16 @@ const newTask=Object.fromEntries(formData.entries());
  console.log('Adding a task with name:',newTask);
 
   const res=await postTask(newTask);
-
   if(res.ok){
     revalidatePath('/tasks');
+    redirect('/tasks');
 }
 
   return res;
+}
+
+export const newTaskAction = async (formData)=>{
+  'use server'
+  const newTask=Object.fromEntries(formData.entries());
+  console.log('Adding a task with name:',newTask);
 }
